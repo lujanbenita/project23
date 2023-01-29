@@ -1,9 +1,9 @@
-name: Unit tests
+name: stylelint code
 
 on: [push, pull_request]
 
 jobs:
-  test:
+  stylelint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -12,4 +12,4 @@ jobs:
         with:
           node-version: "16"
       - run: yarn
-      - run: yarn test
+      - run: npx stylelint **/*.scss

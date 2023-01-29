@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest"
+    "test": "jest",
+    "stylelint": "npx stylelint **/*.scss"
   },
   "dependencies": {
     "next": "13.1.5",
