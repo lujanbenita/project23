@@ -1,3 +1,5 @@
+[![Playwright Tests](https://github.com/lujanbenita/project23/actions/workflows/playwright.yml/badge.svg)](https://github.com/lujanbenita/project23/actions/workflows/playwright.yml)
+
 This is a [Next.js](https://nextjs.org/)
 
 ## Getting Started
