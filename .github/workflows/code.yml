@@ -1,22 +1,17 @@
-name: stylelint code
+name: code
 
-# on: [push, pull_request]
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-    types: [opened, synchronize]
+on: [pull_request]
 
 jobs:
-  stylelint:
+  code:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Test using Node.js
+      - name: Stylelint && Lint
         uses: actions/setup-node@v3
         with:
           node-version: "16"
       - run: yarn
       - run: npx stylelint **/*.scss
+      - run: yarn lint
+      - run: echo "🍏 This job's status is ${{ job.status }}."
