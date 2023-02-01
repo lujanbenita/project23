@@ -3,7 +3,7 @@
 	"plugins": ["stylelint-order"],
 	"rules": {
 		"max-empty-lines": 1,
-		"indentation": 2,
+		"indentation": "tab",
 		"string-quotes": "double",
 		"color-hex-length": "long",
 		"color-hex-case": "upper",
